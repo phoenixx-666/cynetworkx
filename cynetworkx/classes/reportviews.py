@@ -92,7 +92,10 @@ EdgeDataView
 
     The argument `nbunch` restricts edges to those incident to nodes in nbunch.
 """
-from collections import Mapping, Set, Iterable
+try:
+    from collections import Mapping, Set, Iterable
+except ImportError:
+    from collections.abc import Mapping, Set, Iterable
 import cynetworkx as nx
 
 __all__ = ['NodeView', 'NodeDataView',
