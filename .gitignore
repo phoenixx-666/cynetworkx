@@ -1,6 +1,7 @@
 *.c
 *.so
 *.pyc
+*.pyd
 __pycache__
 *~
 .DS_Store
